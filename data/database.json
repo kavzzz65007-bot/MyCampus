@@ -1,0 +1,572 @@
+{
+  "users": [
+    {
+      "id": "usr_student_1",
+      "name": "Alex Rivera",
+      "email": "alex@campus.edu",
+      "password": "$2a$10$RZkw0V78SHxPwSN1wOdEdu9MdaSoySh7sXcrD9W.DQ6K4JSLJRJrm",
+      "role": "student",
+      "department": "Computer Science",
+      "room": "Hostel 3, Room 312",
+      "phone": "+1 (555) 234-5678",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "createdAt": "2026-02-10T09:00:00.000Z"
+    },
+    {
+      "id": "usr_student_2",
+      "name": "Chloe Bennett",
+      "email": "chloe@campus.edu",
+      "password": "$2a$10$RZkw0V78SHxPwSN1wOdEdu9MdaSoySh7sXcrD9W.DQ6K4JSLJRJrm",
+      "role": "student",
+      "department": "Mechanical Engineering",
+      "room": "Hostel 2, Room 104",
+      "phone": "+1 (555) 345-6789",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "createdAt": "2026-02-12T10:30:00.000Z"
+    },
+    {
+      "id": "usr_admin_1",
+      "name": "Dr. Dean Miller",
+      "email": "admin@campus.edu",
+      "password": "$2a$10$RZkw0V78SHxPwSN1wOdEduj9evf1Pw57BoDcLOZpNjcj5n7HF0Xy.",
+      "role": "admin",
+      "department": "Campus Facility Operations",
+      "room": "Admin Building, Office 201",
+      "phone": "+1 (555) 888-0001",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "createdAt": "2026-01-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr_staff_1",
+      "name": "Sam Walker",
+      "email": "sam@campus.edu",
+      "password": "$2a$10$RZkw0V78SHxPwSN1wOdEdun9eZld2mR6gucbLdxQ1/3IJroxKkJA6",
+      "role": "staff",
+      "department": "Electrical & Power Systems",
+      "specialty": "Electrical",
+      "activeTickets": 2,
+      "phone": "+1 (555) 777-1001",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "createdAt": "2026-01-05T08:00:00.000Z"
+    },
+    {
+      "id": "usr_staff_2",
+      "name": "Maria Torres",
+      "email": "maria@campus.edu",
+      "password": "$2a$10$RZkw0V78SHxPwSN1wOdEdun9eZld2mR6gucbLdxQ1/3IJroxKkJA6",
+      "role": "staff",
+      "department": "Water & Plumbing Maintenance",
+      "specialty": "Plumbing",
+      "activeTickets": 1,
+      "phone": "+1 (555) 777-1002",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "createdAt": "2026-01-05T08:00:00.000Z"
+    },
+    {
+      "id": "usr_staff_3",
+      "name": "Devon Chen",
+      "email": "devon@campus.edu",
+      "password": "$2a$10$RZkw0V78SHxPwSN1wOdEdun9eZld2mR6gucbLdxQ1/3IJroxKkJA6",
+      "role": "staff",
+      "department": "HVAC & Climate Control",
+      "specialty": "Classroom/AV",
+      "activeTickets": 1,
+      "phone": "+1 (555) 777-1003",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
+      "createdAt": "2026-01-05T08:00:00.000Z"
+    },
+    {
+      "id": "usr_staff_4",
+      "name": "Priya Patel",
+      "email": "priya@campus.edu",
+      "password": "$2a$10$RZkw0V78SHxPwSN1wOdEdun9eZld2mR6gucbLdxQ1/3IJroxKkJA6",
+      "role": "staff",
+      "department": "Campus IT & Wi-Fi Operations",
+      "specialty": "Internet/Wi-Fi",
+      "activeTickets": 2,
+      "phone": "+1 (555) 777-1004",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+      "createdAt": "2026-01-05T08:00:00.000Z"
+    }
+  ],
+  "complaints": [
+    {
+      "id": "FMC-101",
+      "title": "Overhead Projector Sparking & Burning Smell in Science Lab",
+      "description": "The ceiling projector in Science Lab 102 emitted sparks and a strong burning plastic odor during lecture. The projector has been turned off at breaker, but unit requires urgent replacement.",
+      "category": "Electrical",
+      "location": {
+        "building": "Science Block B",
+        "floor": "1st Floor",
+        "room": "Lab 102",
+        "coordinates": {
+          "lat": 37.7749,
+          "lng": -122.4194
+        }
+      },
+      "imageUrl": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop&q=80",
+      "status": "In Progress",
+      "priority": "CRITICAL",
+      "aiConfidence": 0.95,
+      "aiReasoning": "Critical risk: Electrical sparking and burning odor detected in laboratory environment. Automatic safety escalation triggered.",
+      "reportedBy": {
+        "id": "usr_student_1",
+        "name": "Alex Rivera",
+        "email": "alex@campus.edu"
+      },
+      "assignedTo": {
+        "id": "usr_staff_1",
+        "name": "Sam Walker",
+        "specialty": "Electrical"
+      },
+      "upvotes": 14,
+      "upvotedBy": [
+        "usr_student_1",
+        "usr_student_2"
+      ],
+      "qrCodeId": "QR-SCI-102",
+      "slaHours": 4,
+      "createdAt": "2026-11-25T23:49:52.723Z",
+      "updatedAt": "2026-11-26T01:49:52.724Z",
+      "statusHistory": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-11-25T23:49:52.724Z",
+          "note": "Complaint logged via Web Portal"
+        },
+        {
+          "status": "AI Verified",
+          "timestamp": "2026-11-26T00:01:52.724Z",
+          "note": "AI classified as CRITICAL (Sparks/Fire risk)"
+        },
+        {
+          "status": "Assigned",
+          "timestamp": "2026-11-26T00:49:52.724Z",
+          "note": "Assigned to Senior Electrician Sam Walker"
+        },
+        {
+          "status": "In Progress",
+          "timestamp": "2026-11-26T01:49:52.724Z",
+          "note": "Technician on-site with replacement fuse & circuit test"
+        }
+      ]
+    },
+    {
+      "id": "FMC-102",
+      "title": "Major Water Pipe Leak Flooding Restroom Floor",
+      "description": "The pipe under the second washbasin in Engineering Block A 2nd floor restroom is ruptured and water is pooling across the walkway into the main corridor.",
+      "category": "Plumbing",
+      "location": {
+        "building": "Engineering Block A",
+        "floor": "2nd Floor",
+        "room": "East Wing Restroom",
+        "coordinates": {
+          "lat": 37.7752,
+          "lng": -122.4182
+        }
+      },
+      "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "status": "Assigned",
+      "priority": "HIGH",
+      "aiConfidence": 0.92,
+      "aiReasoning": "Water leak causing pooling hazard and structural runoff risk. Classified as HIGH priority.",
+      "reportedBy": {
+        "id": "usr_student_2",
+        "name": "Chloe Bennett",
+        "email": "chloe@campus.edu"
+      },
+      "assignedTo": {
+        "id": "usr_staff_2",
+        "name": "Maria Torres",
+        "specialty": "Plumbing"
+      },
+      "upvotes": 9,
+      "upvotedBy": [
+        "usr_student_2"
+      ],
+      "qrCodeId": "QR-ENG-REST-2",
+      "slaHours": 8,
+      "createdAt": "2026-11-25T20:49:52.724Z",
+      "updatedAt": "2026-11-25T22:49:52.724Z",
+      "statusHistory": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-11-25T20:49:52.724Z",
+          "note": "Complaint logged via QR Scanner"
+        },
+        {
+          "status": "AI Verified",
+          "timestamp": "2026-11-25T21:01:52.724Z",
+          "note": "AI matched water damage severity (92% confidence)"
+        },
+        {
+          "status": "Assigned",
+          "timestamp": "2026-11-25T22:49:52.724Z",
+          "note": "Assigned to Maria Torres"
+        }
+      ]
+    },
+    {
+      "id": "FMC-103",
+      "title": "Central Library AC blowing hot air during exam study hours",
+      "description": "The central air conditioning on the 3rd floor quiet study zone has been blowing warm humid air for the past 4 hours. The room is overheating.",
+      "category": "HVAC",
+      "location": {
+        "building": "Central Library",
+        "floor": "3rd Floor",
+        "room": "Silent Study Zone 3B",
+        "coordinates": {
+          "lat": 37.7761,
+          "lng": -122.4175
+        }
+      },
+      "imageUrl": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=800&auto=format&fit=crop&q=80",
+      "status": "In Progress",
+      "priority": "MEDIUM",
+      "aiConfidence": 0.88,
+      "aiReasoning": "Comfort and study disruption in high-occupancy library zone. Medium urgency.",
+      "reportedBy": {
+        "id": "usr_student_1",
+        "name": "Alex Rivera",
+        "email": "alex@campus.edu"
+      },
+      "assignedTo": {
+        "id": "usr_staff_3",
+        "name": "Devon Chen",
+        "specialty": "HVAC"
+      },
+      "upvotes": 21,
+      "upvotedBy": [
+        "usr_student_1",
+        "usr_student_2"
+      ],
+      "qrCodeId": "QR-LIB-3B",
+      "slaHours": 24,
+      "createdAt": "2026-11-25T12:49:52.724Z",
+      "updatedAt": "2026-11-26T00:49:52.724Z",
+      "statusHistory": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-11-25T12:49:52.724Z",
+          "note": "Student reported via Mobile"
+        },
+        {
+          "status": "AI Verified",
+          "timestamp": "2026-11-25T12:55:52.724Z",
+          "note": "Auto-clustered 3 related reports"
+        },
+        {
+          "status": "Assigned",
+          "timestamp": "2026-11-25T18:49:52.724Z",
+          "note": "Assigned to Devon Chen"
+        },
+        {
+          "status": "In Progress",
+          "timestamp": "2026-11-26T00:49:52.724Z",
+          "note": "Compressor refrigerant reset underway"
+        }
+      ]
+    },
+    {
+      "id": "FMC-104",
+      "title": "Hostel 3 Wi-Fi Gateway Offline on Floors 3 & 4",
+      "description": "Campus Wi-Fi AP-H3-401 is showing solid red light. Students are unable to access campus portals or submit assignments from their rooms.",
+      "category": "Internet/Wi-Fi",
+      "location": {
+        "building": "Hostel 3 (Cedar Hall)",
+        "floor": "3rd & 4th Floors",
+        "room": "Corridor AP-401",
+        "coordinates": {
+          "lat": 37.7741,
+          "lng": -122.4211
+        }
+      },
+      "imageUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&auto=format&fit=crop&q=80",
+      "status": "Submitted",
+      "priority": "HIGH",
+      "aiConfidence": 0.91,
+      "aiReasoning": "Impacts academic connectivity for over 60 resident students before assignment deadlines.",
+      "reportedBy": {
+        "id": "usr_student_1",
+        "name": "Alex Rivera",
+        "email": "alex@campus.edu"
+      },
+      "assignedTo": null,
+      "upvotes": 38,
+      "upvotedBy": [
+        "usr_student_1",
+        "usr_student_2"
+      ],
+      "qrCodeId": "QR-H3-WIFI",
+      "slaHours": 12,
+      "createdAt": "2026-11-26T01:49:52.724Z",
+      "updatedAt": "2026-11-26T01:49:52.724Z",
+      "statusHistory": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-11-26T01:49:52.724Z",
+          "note": "Reported with 38 community upvotes"
+        },
+        {
+          "status": "AI Verified",
+          "timestamp": "2026-11-26T01:55:52.724Z",
+          "note": "Elevated to HIGH priority based on cluster impact"
+        }
+      ]
+    },
+    {
+      "id": "FMC-105",
+      "title": "Broken Glass Panel on South Stairwell Fire Door",
+      "description": "The safety glass insert on the emergency exit door is shattered. Shards are cracked and could fall if door is pushed hard.",
+      "category": "Infrastructure",
+      "location": {
+        "building": "Student Union Hub",
+        "floor": "Ground Floor",
+        "room": "South Emergency Stairwell",
+        "coordinates": {
+          "lat": 37.7765,
+          "lng": -122.4168
+        }
+      },
+      "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80",
+      "status": "Resolved",
+      "priority": "CRITICAL",
+      "aiConfidence": 0.94,
+      "aiReasoning": "Emergency exit safety violation and laceration hazard.",
+      "reportedBy": {
+        "id": "usr_student_2",
+        "name": "Chloe Bennett",
+        "email": "chloe@campus.edu"
+      },
+      "assignedTo": {
+        "id": "usr_staff_1",
+        "name": "Sam Walker",
+        "specialty": "Electrical"
+      },
+      "upvotes": 5,
+      "upvotedBy": [
+        "usr_student_2"
+      ],
+      "qrCodeId": "QR-UNION-DOOR",
+      "slaHours": 4,
+      "resolutionNote": "Installed new tempered safety glass panel and replaced emergency panic push-bar.",
+      "resolutionProofUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80",
+      "resolvedAt": "2026-11-25T08:49:52.724Z",
+      "createdAt": "2026-11-24T22:49:52.724Z",
+      "updatedAt": "2026-11-25T08:49:52.724Z",
+      "statusHistory": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-11-24T22:49:52.724Z",
+          "note": "Emergency hazard reported"
+        },
+        {
+          "status": "AI Verified",
+          "timestamp": "2026-11-24T22:55:52.724Z",
+          "note": "Auto-flagged as Safety Hazard"
+        },
+        {
+          "status": "Assigned",
+          "timestamp": "2026-11-24T23:49:52.724Z",
+          "note": "Assigned to Facility response team"
+        },
+        {
+          "status": "In Progress",
+          "timestamp": "2026-11-25T02:49:52.724Z",
+          "note": "Area cordoned off and glass cleanup started"
+        },
+        {
+          "status": "Resolved",
+          "timestamp": "2026-11-25T08:49:52.724Z",
+          "note": "New tempered glass installed & safety inspected"
+        }
+      ]
+    },
+    {
+      "id": "FMC-106",
+      "title": "Water Cooler Dispenser Making Strange Hum and Not Cooling",
+      "description": "The drinking fountain in the Cafeteria annex is dispensing room-temperature water with a loud grinding motor sound.",
+      "category": "Sanitation",
+      "location": {
+        "building": "Student Dining Hall",
+        "floor": "Ground Floor",
+        "room": "Cafeteria Annex Water Station",
+        "coordinates": {
+          "lat": 37.777,
+          "lng": -122.418
+        }
+      },
+      "imageUrl": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=800&auto=format&fit=crop&q=80",
+      "status": "Submitted",
+      "priority": "LOW",
+      "aiConfidence": 0.86,
+      "aiReasoning": "Non-hazardous sanitation and utility issue. Low urgency.",
+      "reportedBy": {
+        "id": "usr_student_1",
+        "name": "Alex Rivera",
+        "email": "alex@campus.edu"
+      },
+      "assignedTo": null,
+      "upvotes": 4,
+      "upvotedBy": [
+        "usr_student_1"
+      ],
+      "qrCodeId": "QR-CAFE-WATER",
+      "slaHours": 48,
+      "createdAt": "2026-11-25T21:49:52.724Z",
+      "updatedAt": "2026-11-25T21:49:52.724Z",
+      "statusHistory": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-11-25T21:49:52.724Z",
+          "note": "Submitted via Web"
+        }
+      ]
+    }
+  ],
+  "qrCodes": [
+    {
+      "id": "QR-SCI-102",
+      "code": "SCI-B-LAB102",
+      "name": "Science Block B – Room 102 Lab",
+      "building": "Science Block B",
+      "floor": "1st Floor",
+      "room": "Lab 102",
+      "category": "Classroom/AV",
+      "description": "Advanced Chemistry & Physics Research Lab",
+      "qrDataUrl": "data:image/png;base64,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",
+      "scanCount": 19
+    },
+    {
+      "id": "QR-ENG-REST-2",
+      "code": "ENG-A-FL2-REST",
+      "name": "Engineering Block A – 2nd Floor Restroom",
+      "building": "Engineering Block A",
+      "floor": "2nd Floor",
+      "room": "East Wing Restroom",
+      "category": "Plumbing",
+      "description": "Facility & Plumbing Station",
+      "qrDataUrl": "data:image/png;base64,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",
+      "scanCount": 42
+    },
+    {
+      "id": "QR-LIB-3B",
+      "code": "LIB-3B-AC",
+      "name": "Central Library – 3rd Floor Quiet Zone",
+      "building": "Central Library",
+      "floor": "3rd Floor",
+      "room": "Silent Study Zone 3B",
+      "category": "HVAC",
+      "description": "HVAC Unit 3-East & Reading Desks",
+      "qrDataUrl": "data:image/png;base64,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",
+      "scanCount": 56
+    },
+    {
+      "id": "QR-H3-WIFI",
+      "code": "H3-CORR-AP401",
+      "name": "Hostel 3 – Cedar Hall Wi-Fi AP 401",
+      "building": "Hostel 3 (Cedar Hall)",
+      "floor": "4th Floor",
+      "room": "Corridor Junction 4",
+      "category": "Internet/Wi-Fi",
+      "description": "Cisco Campus Wi-Fi 6 Access Point",
+      "qrDataUrl": "data:image/png;base64,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",
+      "scanCount": 78
+    },
+    {
+      "id": "QR-CAFE-WATER",
+      "code": "CAFE-WATER-STN",
+      "name": "Student Dining Hall – Water Station",
+      "building": "Student Dining Hall",
+      "floor": "Ground Floor",
+      "room": "Cafeteria Annex Water Station",
+      "category": "Sanitation",
+      "description": "Filtered RO Chilled Water Station",
+      "qrDataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAklEQVR4AewaftIAABFKSURBVO3BQaply45twRGOOqmKGqeKOik4GZCFBEfwff11937H75tmf37+QkTkAgsRkUssREQusRARucRCROQSCxGRSyxERC6xEBG5xEJE5BILEZFLLERELrEQEbmE8ZB58lt1BU+YJ6e6grfMk0lXsDNPJl3BxDzZdQUT82TSFezMkye6gp158kRXsDNPnugKTpknp7qCJ8yTU13BKfNk0hVMzJPfqis4tRARucRCROQSCxGRSyxERC5h/AO6gm8zT06ZJ5OuYGeePGGe7LqCSVcwMU++qSuYmCe7rmBinkzMk1NdwamuYGKenDJPJl3BxDzZmSefYp58U1fwbebJGwsRkUssREQusRARucRCROQSCxGRSxgfZJ681RV8U1fwKebJpCvYmSdvmSdPdAU78+StrmBinky6glNdwcQ8OWWeTLqCnXky6Qom5smuK3jCPPkm8+StruATFiIil1iIiFxiISJyiYWIyCUWIiKXMP6LmSenuoJT5smkK/iUrmBnnnxKVzAxT051BRPzZNcVPNEVvGWenDJPJl3BzjyZdAWnuoL/RgsRkUssREQusRARucRCROQSxn+BruCbuoInzJNT5smpruBTzJNT5skTXcEp8+StrmDSFZwyTybmyVtdgfyvhYjIJRYiIpdYiIhcYiEicomFiMgljA/qCn4z8+RUVzDpCk6ZJ5/SFezMk0lX8FZX8JZ5MjFPdl3BpCt4yzz5DcyTSVfwTV3Bb7UQEbnEQkTkEgsRkUssREQusRARuYTxDzBPfjPzZNIV7MyTJ8yTXVfwRFewM08mXcHEPNl1BRPzZNIVvGWe7LqCJ7qCnXky6Qom5smuK3iiK9iZJ5OuYGKe7LqCiXlyyjyZdAWnzJPbLERELrEQEbnEQkTkEgsRkUsYD3UF/2Zdwad0BW+ZJ291BZ/SFfxW5smkK/gm82TSFXxKV/BvsBARucRCROQSCxGRSyxERC6xEBG5xJ+fv3jAPNl1Bd9mnuy6gol5MukKdubJpCuYmCenuoKJeXKqKzhlnsj/6Qom5smpruAt82TSFUzMk0/oCp4wT97qCt5YiIhcYiEicomFiMglFiIil1iIiFzCeKgr2Jknb3UFT3QFp7qCU13BW13BxDz5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",
+      "scanCount": 31
+    },
+    {
+      "id": "QR-UNION-DOOR",
+      "code": "UNION-EXIT-SOUTH",
+      "name": "Student Union – South Emergency Exit",
+      "building": "Student Union Hub",
+      "floor": "Ground Floor",
+      "room": "South Emergency Stairwell",
+      "category": "Infrastructure",
+      "description": "Fire Door & Emergency Egress Corridor",
+      "qrDataUrl": "data:image/png;base64,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",
+      "scanCount": 15
+    }
+  ],
+  "comments": [
+    {
+      "id": "cmt_1",
+      "complaintId": "FMC-101",
+      "userId": "usr_staff_1",
+      "userName": "Sam Walker (Staff)",
+      "userRole": "staff",
+      "content": "Power to circuit breaker B-12 has been isolated. I have requested a replacement projector ballast from the central inventory.",
+      "createdAt": "2026-11-26T01:37:52.724Z"
+    },
+    {
+      "id": "cmt_2",
+      "complaintId": "FMC-101",
+      "userId": "usr_student_1",
+      "userName": "Alex Rivera",
+      "userRole": "student",
+      "content": "Thank you for the quick response! Professor confirmed lab class can resume once power is safely restored.",
+      "createdAt": "2026-11-26T02:01:52.724Z"
+    },
+    {
+      "id": "cmt_3",
+      "complaintId": "FMC-102",
+      "userId": "usr_staff_2",
+      "userName": "Maria Torres (Staff)",
+      "userRole": "staff",
+      "content": "Shutoff valve closed to stop pooling. Sourcing replacement copper fitting from warehouse.",
+      "createdAt": "2026-11-25T23:19:52.724Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_1",
+      "userId": "usr_student_1",
+      "title": "Technician Assigned to Your Report",
+      "message": "Sam Walker (Electrical) is now handling ticket #FMC-101: Science Lab Projector.",
+      "type": "assignment",
+      "complaintId": "FMC-101",
+      "read": false,
+      "createdAt": "2026-11-26T00:49:52.724Z"
+    },
+    {
+      "id": "notif_2",
+      "userId": "usr_student_1",
+      "title": "High Community Upvotes Alert",
+      "message": "Your report #FMC-104: Hostel 3 Wi-Fi has reached 38 upvotes! Priority has been elevated.",
+      "type": "priority",
+      "complaintId": "FMC-104",
+      "read": false,
+      "createdAt": "2026-11-26T01:55:52.724Z"
+    },
+    {
+      "id": "notif_3",
+      "userId": "usr_admin_1",
+      "title": "Critical Safety Hazard Flagged by AI",
+      "message": "AI Engine categorized #FMC-101 as CRITICAL (Fire/Sparks risk). Immediate technician dispatch recommended.",
+      "type": "alert",
+      "complaintId": "FMC-101",
+      "read": true,
+      "createdAt": "2026-11-26T00:01:52.724Z"
+    },
+    {
+      "id": "notif_4",
+      "userId": "usr_student_2",
+      "title": "Issue Resolved & Verified",
+      "message": "Ticket #FMC-105: Broken Glass Panel has been marked Resolved with proof of repair.",
+      "type": "resolution",
+      "complaintId": "FMC-105",
+      "read": true,
+      "createdAt": "2026-11-25T08:49:52.724Z"
+    }
+  ]
+}
